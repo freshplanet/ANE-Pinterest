@@ -18,6 +18,9 @@
 
 package com.freshplanet.pinterest.functions;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
 import android.content.Intent;
 import android.net.Uri;
 
@@ -41,8 +44,14 @@ public class PinterestCreatePinFunction implements FREFunction {
         try
         {
         	imageUrl = arg1[0].getAsString();
-        	sourceUrl = arg1[1].getAsString();
-        	description = arg1[2].getAsString();
+        	if (arg1.length > 1)
+        	{
+            	sourceUrl = arg1[1].getAsString();
+        	}
+        	if (arg1.length > 2)
+        	{
+            	description = arg1[2].getAsString();
+        	}
 
         }
         catch (Exception e)
@@ -62,7 +71,19 @@ public class PinterestCreatePinFunction implements FREFunction {
 			pinIt.doPinIt(arg0.getActivity());
 		} else // use the web version instead
 		{
-			String shareUrl = "http://www.pinterest.com/pin/create/button/?media="+imageUrl+"&description="+description+"&url="+sourceUrl;
+			String shareUrl =  "http://www.pinterest.com/pin/create/button/?media="+imageUrl;
+			if (sourceUrl != null)
+			{
+				shareUrl += "&url="+sourceUrl;
+			}
+			if (description != null)
+			{
+				try {
+					shareUrl += "&description="+URLEncoder.encode(description, "utf-8");
+				} catch (UnsupportedEncodingException e) {
+					e.printStackTrace();
+				}
+			}
 			Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(shareUrl));
 			arg0.getActivity().startActivity(myIntent);
 		}
