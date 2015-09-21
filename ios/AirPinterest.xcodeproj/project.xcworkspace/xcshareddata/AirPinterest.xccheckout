@@ -10,29 +10,29 @@
 	<string>AirPinterest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DDA2795B-C484-4373-B05E-6B82F4031079</key>
-		<string>https://github.com/freshplanet/ANE-Alert.git</string>
+		<key>A8B9258425FBEB8A6740CD2806ECA9402BF8062E</key>
+		<string>https://github.com/freshplanet/ANE-Pinterest.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ios/AirPinterest/AirPinterest.xcodeproj/project.xcworkspace</string>
+	<string>ios/AirPinterest.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DDA2795B-C484-4373-B05E-6B82F4031079</key>
-		<string>../../../..</string>
+		<key>A8B9258425FBEB8A6740CD2806ECA9402BF8062E</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/freshplanet/ANE-Alert.git</string>
+	<string>https://github.com/freshplanet/ANE-Pinterest.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DDA2795B-C484-4373-B05E-6B82F4031079</string>
+	<string>A8B9258425FBEB8A6740CD2806ECA9402BF8062E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DDA2795B-C484-4373-B05E-6B82F4031079</string>
+			<string>A8B9258425FBEB8A6740CD2806ECA9402BF8062E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ANE-Pinterest</string>
 		</dict>

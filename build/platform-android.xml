@@ -1,0 +1,5 @@
+<platform xmlns="http://ns.adobe.com/air/extension/17.0"> 
+    <packagedDependencies>
+        <packagedDependency>pinit-sdk-1.0.jar</packagedDependency>
+    </packagedDependencies> 
+</platform>
